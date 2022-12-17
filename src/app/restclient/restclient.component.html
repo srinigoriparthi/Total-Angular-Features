@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<p><b>Rending Users Info from outside REST Service</b></p>
+<table style="width:30%" align="center" *ngIf="restinfoList.length > 1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>UserName</th>
+        <th>Email</th>
+        <th>Street</th>
+    </tr>
+    <tr *ngFor="let user of restinfoList">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.address.street}}</td>
+    </tr>
+</table>
+</html>

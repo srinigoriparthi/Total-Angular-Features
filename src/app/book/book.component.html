@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<p><b>Rending Books Info from outside Sprint Boot Local REST Service</b></p>
+<table style="width:30%" align="center" *ngIf="bookInfoList.length > 1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>        
+    </tr>
+    <tr *ngFor="let book of bookInfoList">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.price}}</td>
+    </tr>
+</table>
+</html>

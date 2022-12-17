@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <h1>Welcome to Component !!</h1>
+        <h2>Table With Dynamic Content from Products</h2>
+        <p>Rendering the products only if List of "products" size is greater than 1</p>
+        <table style="width:30%" align="center" *ngIf="products.length > 1">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Brand</th>
+                <th>Price</th>
+            </tr>
+            <tr *ngFor="let product of products">
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.brand}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+            
+        </table>
+    </div>
+    
+
+   
+
+</body>
+
+</html>

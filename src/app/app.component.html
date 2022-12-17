@@ -1,0 +1,32 @@
+<div style="text-align:center">
+  <h1>Welcome to {{title}} !</h1>
+  <h1 align="center">**********</h1> 
+  <!-- Injecting another child static component here-->
+  <app-my-component></app-my-component> 
+  
+  <h1 align="center">**********</h1> 
+  <!-- Injecting another child dynamic component here-->
+  <app-user></app-user>
+
+  <h1 align="center">**********</h1> 
+  <!-- Injecting another child product component here-->
+  <app-product></app-product>
+
+  <h1 align="center">**********</h1> 
+  <p align="center"> <b>Two way binding example...</b></p>
+  <input type="text" [(ngModel)]="message">
+  {{message}}
+
+
+  <h1 align="center">**********</h1>   
+  <p align="center"> <b>REST Http Client Example </b></p>
+  <app-restclient></app-restclient>
+
+  <h1 align="center">**********</h1>   
+  <p align="center"> <b>Sprint Boot Local Rest Client Example  </b></p>
+  <app-book></app-book>
+
+</div>
+
+
+
