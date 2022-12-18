@@ -10,6 +10,8 @@ import { ProductComponent } from './product/product.component';
 import { FormsModule } from '@angular/forms';
 import { RestclientComponent } from './restclient/restclient.component';
 import { BookComponent } from './book/book.component';
+import { ActivityComponent } from './activity/activity.component';
+import { AgePipe } from './age.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BookComponent } from './book/book.component';
     UserComponent,
     ProductComponent,
     RestclientComponent,
-    BookComponent
+    BookComponent,
+    ActivityComponent,
+    AgePipe
   ],
   imports: [
     BrowserModule,

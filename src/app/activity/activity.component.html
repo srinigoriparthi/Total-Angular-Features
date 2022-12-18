@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+
+<table style="width:30%" align="center" *ngIf="activitiesLst.length > 1">
+    <tr>
+        <th>Id</th>
+        <th>Title</th>        
+        <th>Status</th>        
+        <th>DOB</th>        
+        <th>Age</th>   
+    </tr>
+    <tr *ngFor="let activity of activitiesLst">
+        <td>{{activity.id}}</td>
+        <td>{{activity.title | lowercase}}</td>                
+        <td>
+            <div  [ngSwitch]="activity.status">
+                <span *ngSwitchCase="0"> Not Completed </span>
+                <span *ngSwitchCase="1"> Completed </span>
+                <span *ngSwitchDefault> NA </span>
+            </div>
+        </td>
+        <td>{{activity.dob}}</td>                
+        <td>{{activity.dob | age}}</td>                
+    </tr>
+</table>
+</html>
