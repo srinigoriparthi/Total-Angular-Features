@@ -12,6 +12,7 @@ import { RestclientComponent } from './restclient/restclient.component';
 import { BookComponent } from './book/book.component';
 import { ActivityComponent } from './activity/activity.component';
 import { AgePipe } from './age.pipe';
+import { PracticeComponent } from './practice/practice.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AgePipe } from './age.pipe';
     RestclientComponent,
     BookComponent,
     ActivityComponent,
-    AgePipe
+    AgePipe,
+    PracticeComponent
   ],
   imports: [
     BrowserModule,
