@@ -2,4 +2,11 @@
 <h1 class={{special}}>This is {{title}}</h1>
 <h1 class={{special}}>{{currentDate}}</h1> 
 <h1 class={{pecial}}>{{normalDate}}</h1> 
-<h1>{{normalTime}}</h1> 
+<h1 [class]= "isactive ? 'active' : 'inactive'"> Time is: {{normalTime}}</h1>  <!-- Applying ternary variable -->
+<h1 [class]="{'c1':true}">This is Heading</h1>  <!-- Applying C1 class based on boolean variable -->
+<h1 [class]="{c1:applyc1, active:isactive}">This is Heading active</h1>  <!-- Applying two classes based on two variables -->
+<h1 [class]="['c1','inactive']">This is Heading 2</h1> <!-- Applying all classes at the same time-->
+<h1 [class.active]=isactive>This is Heading 3</h1> <!-- Applying active class only when isactive property is True -->
+
+Name: <input type="text">
+<button [disabled]=isdisabled>Submit</button>

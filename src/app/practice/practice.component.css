@@ -7,3 +7,17 @@
     border: 2px solid blue;
     text-align: center;
 }
+
+.active{
+    background-color: blueviolet;
+    color: white;
+}
+
+.inactive{
+    border: 2px solid red;
+    text-align: center;
+}
+
+.c1{
+    color:yellowgreen;
+}
